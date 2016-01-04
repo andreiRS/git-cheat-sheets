@@ -1,4 +1,8 @@
-**Blame statistics: list the number of lines written per author:**
+```
+# List the number of lines written per author:
+git ls-tree -r -z --name-only HEAD -- */*.c | xargs -0 -n1 git blame \
+--line-porcelain HEAD |grep  "^author "|sort|uniq -c|sort -nr
 
-```git ls-tree -r -z --name-only HEAD -- */*.c | xargs -0 -n1 git blame \
---line-porcelain HEAD |grep  "^author "|sort|uniq -c|sort -nr```
+# Preformated log
+git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+```
