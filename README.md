@@ -1,5 +1,4 @@
-Blame statistics: list the number of lines written per author:
+**Blame statistics: list the number of lines written per author:**
 
 ```git ls-tree -r -z --name-only HEAD -- */*.c | xargs -0 -n1 git blame \
---line-porcelain HEAD |grep  "^author "|sort|uniq -c|sort -nr
-```
+--line-porcelain HEAD |grep  "^author "|sort|uniq -c|sort -nr```
