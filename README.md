@@ -1,3 +1,6 @@
+# Git Cheat Sheets
+
+## Usefull commands
 ```
 # List the number of lines written per author:
 git ls-tree -r -z --name-only HEAD -- */*.c | xargs -0 -n1 git blame \
