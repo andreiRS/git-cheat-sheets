@@ -13,6 +13,5 @@ git log --color --graph \
 
 # Finding the most changed files in git
 git log --pretty=format: --name-only | sort | uniq -c | sort -rg | head -10
-
 git log --pretty=format: --name-only frontend ":(exclude)*generated*" ":(exclude)*swc*" | sort | uniq -c | sort -rg  > changes.txt
 ```
