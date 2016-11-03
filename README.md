@@ -1,4 +1,4 @@
-# Git Cheat Sheets test
+# Git Cheat Sheets
 
 ## Usefull commands
 ```
